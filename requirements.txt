@@ -1,0 +1,4 @@
+cherrypy
+pyopenssl
+six
+httpagentparser
