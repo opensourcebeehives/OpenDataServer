@@ -54,7 +54,7 @@ class OpenDataServer(object):
             measurement['device_id'] + '/measurements/'
         if not os.path.isdir(folder):
             os.makedirs(folder)
-        path = folder + measurement['published_at'].split()[0] + '.csv'
+        path = folder + 'measurements.csv'
         write_headers = True
         if os.path.isfile(path):
             write_headers = False
@@ -70,7 +70,7 @@ class OpenDataServer(object):
             audioevent['device_id'] + '/audioevents/'
         if not os.path.isdir(folder):
             os.makedirs(folder)
-        path = folder + audioevent['published_at'].split()[0] + '.csv'
+        path = folder + 'audioevents.csv'
         write_headers = True
         if os.path.isfile(path):
             write_headers = False
